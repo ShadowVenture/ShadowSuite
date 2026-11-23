@@ -1,0 +1,57 @@
+{
+ "channel": "candles",
+ "events": [
+  {
+   "candles": [
+    {
+     "close": "82008.26",
+     "high": "82158.54",
+     "low": "82001.04",
+     "open": "82086.32",
+     "product_id": "BTC-USD",
+     "start": "1792419600",
+     "volume": "23.20562027"
+    },
+    {
+     "close": "82034.7",
+     "high": "82034.7",
+     "low": "81882.47",
+     "open": "82008.27",
+     "product_id": "BTC-USD",
+     "start": "1792419900",
+     "volume": "24.73049317"
+    },
+    {
+     "close": "81801.64",
+     "high": "82051.02",
+     "low": "81770.83",
+     "open": "82046.25",
+     "product_id": "BTC-USD",
+     "start": "1792420200",
+     "volume": "19.4882014"
+    },
+    {
+     "close": "81832.52",
+     "high": "81907.68",
+     "low": "81794.85",
+     "open": "81801.64",
+     "product_id": "BTC-USD",
+     "start": "1792420500",
+     "volume": "19.92572612"
+    },
+    {
+     "close": "81872.26",
+     "high": "81935.91",
+     "low": "81802.53",
+     "open": "81831.56",
+     "product_id": "BTC-USD",
+     "start": "1792420800",
+     "volume": "31.62543515"
+    }
+   ],
+   "type": "snapshot"
+  }
+ ],
+ "sequence_num": 23,
+ "timestamp": "2026-10-19T14:43:52.636082848Z"
+}

@@ -1,0 +1,12 @@
+{
+ "channel": "l2_data",
+ "events": [
+  {
+   "product_id": "BTC-PERP-INTX",
+   "type": "snapshot",
+   "updates": []
+  }
+ ],
+ "sequence_num": 15,
+ "timestamp": "2026-10-19T14:43:52.631915965Z"
+}

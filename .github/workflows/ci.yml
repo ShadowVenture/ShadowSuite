@@ -1,0 +1,133 @@
+# CI for a PAPER-TRADING-ONLY project.
+# - No repository secrets are referenced; the suite reads no credentials.
+# - Read-only token permissions; checkout does not persist credentials.
+# - Every third-party action is pinned by full commit SHA; binaries are checksum-verified.
+# - Tests run offline: network sockets are disabled by pytest-socket (see pyproject.toml).
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PAPER_TRADING: "true"
+  LIVE_TRADING_ENABLED: "false"
+  UV_VERSION: "0.12.23"
+  UV_SHA256: "9167d72b3319674b6303c4cbe071854bba13ebdf3d76b1a7cbdc175471fb66d6"
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+        with:
+          version: ${{ env.UV_VERSION }}
+          checksum: ${{ env.UV_SHA256 }}
+          enable-cache: false
+      - run: uv sync --frozen
+      - run: uv run --frozen ruff check .
+      - run: uv run --frozen ruff format --check .
+      - run: uv run --frozen mypy
+      - run: uv run --frozen mypy tests examples
+
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.12", "3.13", "3.14"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+        with:
+          version: ${{ env.UV_VERSION }}
+          checksum: ${{ env.UV_SHA256 }}
+          python-version: ${{ matrix.python }}
+          enable-cache: false
+      - run: uv sync --frozen
+      - run: uv run --frozen pytest
+
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+        with:
+          version: ${{ env.UV_VERSION }}
+          checksum: ${{ env.UV_SHA256 }}
+          python-version: "3.13"
+          enable-cache: false
+      - name: Build sdist and wheel
+        run: uv build
+      - name: Install the wheel into a clean venv and start without bots
+        run: |
+          set -euo pipefail
+          uv venv "$RUNNER_TEMP/clean"
+          uv pip install --python "$RUNNER_TEMP/clean/bin/python" dist/*.whl
+          cd "$RUNNER_TEMP"
+          "$RUNNER_TEMP/clean/bin/sts" version
+          "$RUNNER_TEMP/clean/bin/sts" check
+          "$RUNNER_TEMP/clean/bin/sts" simulate \
+            --scenario "$GITHUB_WORKSPACE/examples/scenarios/btc-usd-short.json" \
+            --data-dir "$RUNNER_TEMP/demo" > "$RUNNER_TEMP/report.json"
+          "$RUNNER_TEMP/clean/bin/python" -c "import json,sys; d=json.load(open(sys.argv[1])); assert d['plugins']==[] and d['paper_only'] is True and d['bootstrapped'] is True" "$RUNNER_TEMP/report.json"
+          if LIVE_TRADING_ENABLED=true "$RUNNER_TEMP/clean/bin/sts" version; then exit 1; fi
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        with:
+          name: dist
+          path: dist/
+          retention-days: 14
+
+  security:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      GITLEAKS_VERSION: "8.30.1"
+      GITLEAKS_SHA256: "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0  # full history for secret scanning
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+        with:
+          version: ${{ env.UV_VERSION }}
+          checksum: ${{ env.UV_SHA256 }}
+          enable-cache: false
+      - name: Install gitleaks (checksum verified)
+        run: |
+          set -euo pipefail
+          f="gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          curl -fsSLo "$RUNNER_TEMP/$f" \
+            "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/$f"
+          echo "${GITLEAKS_SHA256}  $RUNNER_TEMP/$f" | sha256sum -c -
+          tar -xzf "$RUNNER_TEMP/$f" -C "$RUNNER_TEMP" gitleaks
+      - name: Secret scan (full git history)
+        run: $RUNNER_TEMP/gitleaks git . --redact --no-banner --verbose
+      - name: Lockfile is consistent with pyproject.toml
+        run: uv lock --check
+      - name: Vulnerability audit of the locked runtime dependencies
+        run: |
+          set -euo pipefail
+          uv export --frozen --no-dev --no-emit-project --no-hashes -o "$RUNNER_TEMP/runtime.txt"
+          uvx --from pip-audit==2.10.1 pip-audit --progress-spinner off --strict \
+            --requirement "$RUNNER_TEMP/runtime.txt"

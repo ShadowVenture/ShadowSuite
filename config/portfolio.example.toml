@@ -1,0 +1,85 @@
+# Shadow Trading Suite - example paper portfolio (= `risk.config.default_portfolio_config()`).
+# PAPER ONLY. The capital is fictitious simulation money. Leverage values are hypothetical
+# simulation caps, not exchange capabilities. Fee and margin values are ASSUMPTIONS.
+# Money and rates are strings (exact decimals). Unknown keys are rejected.
+#
+# The suite ships NO bots: `bots` is empty. Each installed plugin needs one [[bots]] table
+# (see docs/plugins.md). An empty portfolio starts and shows an empty state.
+
+portfolio_id = "paper-main"
+base_currency = "EUR"
+starting_capital_eur = "10000"
+bots = []
+
+[limits]
+max_gross_per_underlying = "4"
+max_gross_per_venue = "5"
+max_gross_total = "6"
+max_margin_in_use = "0.60"
+max_instrument_concentration = "0.40"
+stress_shock = "0.05"
+stress_shocks = ["0.01", "0.03", "0.05", "0.10"]
+max_stress_loss = "0.15"
+emergency_daily_loss = "0.08"
+emergency_drawdown = "0.20"
+reject_opposing_positions = true
+max_data_age_derivatives_s = 5
+max_data_age_spot_s = 10
+
+[margin]
+cryptocom_major_bases = ["BTC", "ETH"]
+volatility_multiplier = "3"
+volatility_horizon_minutes = 60
+
+[margin.cryptocom_major_mmr]
+value = "0.005"
+source = "assumption"
+note = "no public maintenance tiers; BTC/ETH"
+
+[margin.cryptocom_other_mmr]
+value = "0.01"
+source = "assumption"
+note = "no public maintenance tiers; other perps"
+
+[margin.fcm_maintenance_fraction]
+value = "0.80"
+source = "assumption"
+note = "maintenance as share of published FCM initial margin"
+
+[fees]
+
+[fees.spot_taker]
+value = "0.006"
+source = "assumption"
+note = "ASSUMPTION: verify against the official fee schedule"
+
+[fees.spot_maker]
+value = "0.004"
+source = "assumption"
+note = "ASSUMPTION: verify against the official fee schedule"
+
+[fees.derivatives_taker]
+value = "0.0006"
+source = "assumption"
+note = "ASSUMPTION: verify against the official fee schedule"
+
+[fees.derivatives_maker]
+value = "0.0002"
+source = "assumption"
+note = "ASSUMPTION: verify against the official fee schedule"
+
+[fees.conversion_cost]
+value = "0.002"
+source = "assumption"
+note = "simulated FX/stablecoin conversion cost"
+
+[fees.min_slippage]
+value = "0.0002"
+source = "assumption"
+note = "floor when the book walk finds less"
+
+# Optional treasury buffer (R2). Disabled: enabling it requires an approved allocation change
+# (allocations must total <= starting capital x (1 - fraction)); never adjusted automatically.
+[liquidity_reserve]
+enabled = false
+fraction = "0.10"

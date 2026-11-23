@@ -1,0 +1,11 @@
+{
+ "channel": "heartbeats",
+ "events": [
+  {
+   "current_time": "2026-10-19 14:43:52.647566638 +0000 UTC m=+280587.267609276",
+   "heartbeat_counter": 280587
+  }
+ ],
+ "sequence_num": 33,
+ "timestamp": "2026-10-19T14:43:52.650206355Z"
+}

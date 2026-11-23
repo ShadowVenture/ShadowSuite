@@ -1,0 +1,35 @@
+{
+ "code": 0,
+ "id": -1,
+ "method": "subscribe",
+ "result": {
+  "channel": "book.update",
+  "data": [
+   {
+    "cs": -471292638,
+    "pu": 380194248779488,
+    "t": 1792421035022,
+    "tt": 1792421035016,
+    "u": 380194249407424,
+    "update": {
+     "asks": [
+      [
+       "81879.10",
+       "0",
+       "0"
+      ],
+      [
+       "81879.71",
+       "0.02131",
+       "1"
+      ]
+     ],
+     "bids": []
+    }
+   }
+  ],
+  "depth": 10,
+  "instrument_name": "BTC_USD",
+  "subscription": "book.BTC_USD.10"
+ }
+}

@@ -1,0 +1,25 @@
+Shadow Trading Suite
+Copyright (C) 2026 ShadowVenture
+
+This program is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, version 3 of the
+License only (SPDX-License-Identifier: GPL-3.0-only).
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+the GNU General Public License (file LICENSE) for more details.
+
+The source code was written for this project (a generic extract of a private paper-trading
+research system by the same copyright holder) and contains no third-party source code.
+Dependencies are installed separately and keep their own licences; see THIRD_PARTY_LICENSES.md.
+
+Test fixtures under tests/fixtures/coinbase, tests/fixtures/cryptocom and tests/fixtures/ws are
+short, trimmed samples of responses from the venues' PUBLIC market-data APIs. They are used only
+to test parsers and are not covered by the GPL claim above; see tests/fixtures/README.md.
+
+Trademarks: "Coinbase" and "Crypto.com" are trademarks of their respective owners. They are used
+here only to name the public APIs the adapters read. This project is not affiliated with,
+endorsed by or sponsored by them.
+
+NO FINANCIAL ADVICE. The software is a paper-trading simulation. It does not trade with real
+money, and simulated results are not evidence of profitability.

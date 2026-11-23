@@ -1,0 +1,61 @@
+{
+ "best_ask": "82467.3",
+ "best_bid": "82467.29",
+ "trades": [
+  {
+   "ask": "",
+   "bid": "",
+   "exchange": "coinbase",
+   "price": "82467.29",
+   "product_id": "BTC-USD",
+   "side": "BUY",
+   "size": "0.00000002",
+   "time": "2026-10-19T12:28:19.928113Z",
+   "trade_id": "1107938868"
+  },
+  {
+   "ask": "",
+   "bid": "",
+   "exchange": "coinbase",
+   "price": "82467.29",
+   "product_id": "BTC-USD",
+   "side": "BUY",
+   "size": "0.00000003",
+   "time": "2026-10-19T12:28:18.884279Z",
+   "trade_id": "1107938867"
+  },
+  {
+   "ask": "",
+   "bid": "",
+   "exchange": "coinbase",
+   "price": "82467.29",
+   "product_id": "BTC-USD",
+   "side": "BUY",
+   "size": "0.00000009",
+   "time": "2026-10-19T12:28:18.767922Z",
+   "trade_id": "1107938866"
+  },
+  {
+   "ask": "",
+   "bid": "",
+   "exchange": "coinbase",
+   "price": "82467.29",
+   "product_id": "BTC-USD",
+   "side": "BUY",
+   "size": "0.00000013",
+   "time": "2026-10-19T12:28:18.011505Z",
+   "trade_id": "1107938865"
+  },
+  {
+   "ask": "",
+   "bid": "",
+   "exchange": "coinbase",
+   "price": "82467.29",
+   "product_id": "BTC-USD",
+   "side": "BUY",
+   "size": "0.00000004",
+   "time": "2026-10-19T12:28:17.715215Z",
+   "trade_id": "1107938864"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "code": 0,
+ "id": -1,
+ "method": "subscribe",
+ "result": {
+  "channel": "candlestick",
+  "data": [
+   {
+    "c": "81874.24",
+    "h": "81947.99",
+    "l": "81864.06",
+    "o": "81926.49",
+    "t": 1792420980000,
+    "ut": 1792421035279,
+    "v": "8.73195"
+   }
+  ],
+  "instrument_name": "BTC_USD",
+  "interval": "1m",
+  "subscription": "candlestick.1m.BTC_USD"
+ }
+}

@@ -1,0 +1,16 @@
+{
+ "code": 0,
+ "id": 2,
+ "method": "subscribe",
+ "result": {
+  "channel": "mark",
+  "data": [
+   {
+    "t": 1792421034000,
+    "v": "81883.9"
+   }
+  ],
+  "instrument_name": "BTCUSD-PERP",
+  "subscription": "mark.BTCUSD-PERP"
+ }
+}

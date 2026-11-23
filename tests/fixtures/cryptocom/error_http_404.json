@@ -1,0 +1,6 @@
+{
+ "error": "Not Found",
+ "path": "/v1/public/get-instruments-bogus",
+ "status": 404,
+ "timestamp": "2026-10-19T12:28:23.451+00:00"
+}

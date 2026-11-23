@@ -1,0 +1,5 @@
+{
+  "error": "INVALID_ARGUMENT",
+  "error_details": "start and end argument is invalid - number of candles requested should be less than 350 ",
+  "message": "start and end argument is invalid - number of candles requested should be less than 350 "
+}

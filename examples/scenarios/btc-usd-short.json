@@ -1,0 +1,2950 @@
+{
+ "_comment": "SYNTHETIC offline scenario for the paper host. Instrument metadata is a recorded PUBLIC Coinbase product response; prices are synthetic. No network, no real order.",
+ "start": "2026-01-05T12:00:00+00:00",
+ "instruments": {
+  "coinbase": [
+   {
+    "about_description": "",
+    "alias": "",
+    "alias_to": [
+     "BTC-USDC"
+    ],
+    "approximate_quote_24h_volume": "315631336.74",
+    "auction_mode": false,
+    "base_cbrn": "",
+    "base_currency_id": "BTC",
+    "base_display_symbol": "BTC",
+    "base_increment": "0.00000001",
+    "base_max_size": "3400",
+    "base_min_size": "0.00000001",
+    "base_name": "Bitcoin",
+    "best_ask_price": "",
+    "best_bid_price": "",
+    "cancel_only": false,
+    "display_name": "BTC-USD",
+    "display_name_overwrite": "",
+    "fcm_trading_session_details": null,
+    "hidden_from_discovery": false,
+    "high_24h": "83076.23",
+    "icon_color": "",
+    "icon_url": "",
+    "is_alpha_testing": false,
+    "is_disabled": false,
+    "limit_only": false,
+    "low_24h": "80564.57",
+    "market_cap": "",
+    "mid_market_price": "",
+    "new": false,
+    "new_at": "2023-01-01T00:00:00Z",
+    "post_only": false,
+    "price": "82467.29",
+    "price_increment": "0.01",
+    "price_percentage_change_24h": "0.66222958724566",
+    "product_cbrn": "",
+    "product_id": "BTC-USD",
+    "product_type": "SPOT",
+    "product_venue": "CBE",
+    "quote_cbrn": "",
+    "quote_currency_id": "USD",
+    "quote_display_symbol": "USD",
+    "quote_increment": "0.01",
+    "quote_max_size": "150000000",
+    "quote_min_size": "1",
+    "quote_name": "US Dollar",
+    "status": "online",
+    "trading_disabled": false,
+    "view_only": false,
+    "volume_24h": "3827.35187181",
+    "volume_percentage_change_24h": "60.22100508942743",
+    "watched": false
+   }
+  ]
+ },
+ "events": [
+  {
+   "at_ms": 0,
+   "type": "live",
+   "instrument": "coinbase:BTC-USD",
+   "streams": [
+    "book",
+    "trades"
+   ]
+  },
+  {
+   "at_ms": 0,
+   "type": "live",
+   "instrument": "coinbase:BTC-EUR",
+   "streams": [
+    "ticker"
+   ]
+  },
+  {
+   "at_ms": 0,
+   "type": "live",
+   "instrument": "coinbase:BTC-USD",
+   "streams": [
+    "ticker"
+   ]
+  },
+  {
+   "at_ms": 0,
+   "type": "live",
+   "instrument": "coinbase:ETH-EUR",
+   "streams": [
+    "ticker"
+   ]
+  },
+  {
+   "at_ms": 0,
+   "type": "live",
+   "instrument": "coinbase:ETH-USD",
+   "streams": [
+    "ticker"
+   ]
+  },
+  {
+   "at_ms": 0,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 0,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 0,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 0,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s0"
+  },
+  {
+   "at_ms": 200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 3200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 60000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 60000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 60000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 60000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 60100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s1"
+  },
+  {
+   "at_ms": 60200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 63200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 120000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 120000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 120000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 120000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 120100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s2"
+  },
+  {
+   "at_ms": 120200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 123200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 180000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 180000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 180000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 180000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 180100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s3"
+  },
+  {
+   "at_ms": 180200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 183200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 240000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 240000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 240000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 240000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 240100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s4"
+  },
+  {
+   "at_ms": 240200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 243200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 300000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 300000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 300000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 300000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 300100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s5"
+  },
+  {
+   "at_ms": 300200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 303200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 360000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 360000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 360000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 360000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 360100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s6"
+  },
+  {
+   "at_ms": 360200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 363200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 420000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 420000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 420000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 420000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 420100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s7"
+  },
+  {
+   "at_ms": 420200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 423200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 480000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 480000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 480000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 480000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 480100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s8"
+  },
+  {
+   "at_ms": 480200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 483200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 540000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 540000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 540000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 540000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 540100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s9"
+  },
+  {
+   "at_ms": 540200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 543200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 600000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 600000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 600000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 600000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 600100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s10"
+  },
+  {
+   "at_ms": 600200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 603200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 660000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 660000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 660000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 660000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 660100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s11"
+  },
+  {
+   "at_ms": 660200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 663200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 720000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 720000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 720000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 720000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 720100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s12"
+  },
+  {
+   "at_ms": 720200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 723200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 780000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 780000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 780000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 780000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 780100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s13"
+  },
+  {
+   "at_ms": 780200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 783200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 840000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 840000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 840000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 840000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 840100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s14"
+  },
+  {
+   "at_ms": 840200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 843200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 900000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 900000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 900000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 900000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 900100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s15"
+  },
+  {
+   "at_ms": 900200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 903200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 960000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 960000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 960000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 960000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 960100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s16"
+  },
+  {
+   "at_ms": 960200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 963200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1020000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1020000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1020000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1020000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1020100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s17"
+  },
+  {
+   "at_ms": 1020200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1023200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1080000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1080000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1080000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1080000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1080100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s18"
+  },
+  {
+   "at_ms": 1080200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1083200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1140000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1140000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1140000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1140000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1140100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s19"
+  },
+  {
+   "at_ms": 1140200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1143200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1200000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1200000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1200000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1200000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1200100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s20"
+  },
+  {
+   "at_ms": 1200200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1203200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1260000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1260000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1260000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1260000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1260100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s21"
+  },
+  {
+   "at_ms": 1260200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1263200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1320000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1320000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1320000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1320000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1320100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s22"
+  },
+  {
+   "at_ms": 1320200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1323200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1380000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1380000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1380000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1380000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1380100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s23"
+  },
+  {
+   "at_ms": 1380200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1383200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1440000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1440000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1440000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1440000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1440100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s24"
+  },
+  {
+   "at_ms": 1440200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1443200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1500000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1500000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1500000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1500000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1500100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s25"
+  },
+  {
+   "at_ms": 1500200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1503200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1560000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1560000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1560000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1560000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1560100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s26"
+  },
+  {
+   "at_ms": 1560200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1563200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1620000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1620000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1620000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1620000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1620100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s27"
+  },
+  {
+   "at_ms": 1620200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1623200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1680000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1680000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1680000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1680000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1680100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s28"
+  },
+  {
+   "at_ms": 1680200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1683200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1740000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1740000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1740000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1740000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1740100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s29"
+  },
+  {
+   "at_ms": 1740200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1743200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1800000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1800000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1800000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1800000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1800100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s30"
+  },
+  {
+   "at_ms": 1800200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1803200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1860000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1860000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1860000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1860000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1860100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s31"
+  },
+  {
+   "at_ms": 1860200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1863200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1920000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1920000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1920000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1920000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1920100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s32"
+  },
+  {
+   "at_ms": 1920200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1923200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1980000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 1980000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 1980000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 1980000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 1980100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s33"
+  },
+  {
+   "at_ms": 1980200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 1983200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2040000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 2040000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 2040000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 2040000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 2040100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s34"
+  },
+  {
+   "at_ms": 2040200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2043200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2100000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 2100000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 2100000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 2100000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 2100100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s35"
+  },
+  {
+   "at_ms": 2100200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2103200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2160000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 2160000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 2160000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 2160000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 2160100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s36"
+  },
+  {
+   "at_ms": 2160200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2163200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2220000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 2220000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 2220000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 2220000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 2220100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s37"
+  },
+  {
+   "at_ms": 2220200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2223200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2280000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 2280000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 2280000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 2280000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 2280100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "81985",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s38"
+  },
+  {
+   "at_ms": 2280200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2283200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "81984",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "81986",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2340000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-EUR",
+   "bid": "70519",
+   "ask": "70521"
+  },
+  {
+   "at_ms": 2340000,
+   "type": "ticker",
+   "instrument": "coinbase:BTC-USD",
+   "bid": "81999",
+   "ask": "82001"
+  },
+  {
+   "at_ms": 2340000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-EUR",
+   "bid": "2579",
+   "ask": "2581"
+  },
+  {
+   "at_ms": 2340000,
+   "type": "ticker",
+   "instrument": "coinbase:ETH-USD",
+   "bid": "2999",
+   "ask": "3001"
+  },
+  {
+   "at_ms": 2340100,
+   "type": "trade",
+   "instrument": "coinbase:BTC-USD",
+   "price": "82015",
+   "quantity": "0.01",
+   "side": "buy",
+   "trade_id": "s39"
+  },
+  {
+   "at_ms": 2340200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2343200,
+   "type": "book",
+   "instrument": "coinbase:BTC-USD",
+   "bids": [
+    [
+     "82014",
+     "2"
+    ]
+   ],
+   "asks": [
+    [
+     "82016",
+     "2"
+    ]
+   ]
+  },
+  {
+   "at_ms": 2400000,
+   "type": "tick"
+  }
+ ]
+}

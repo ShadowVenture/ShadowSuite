@@ -1,0 +1,21 @@
+{
+ "channel": "candles",
+ "events": [
+  {
+   "candles": [
+    {
+     "close": "81905",
+     "high": "81955",
+     "low": "81845",
+     "open": "81845",
+     "product_id": "BIP-20DEC30-CDE",
+     "start": "1792420800",
+     "volume": "1170"
+    }
+   ],
+   "type": "update"
+  }
+ ],
+ "sequence_num": 96,
+ "timestamp": "2026-10-19T14:43:54.023621885Z"
+}

@@ -1,0 +1,29 @@
+{
+ "channel": "subscriptions",
+ "events": [
+  {
+   "subscriptions": {
+    "heartbeats": [
+     "heartbeats"
+    ],
+    "level2": [
+     "BTC-USD",
+     "BTC-PERP-INTX",
+     "BIP-20DEC30-CDE"
+    ],
+    "ticker": [
+     "BTC-PERP-INTX",
+     "BIP-20DEC30-CDE",
+     "BTC-USD"
+    ],
+    "ticker_batch": [
+     "BTC-USD",
+     "BTC-PERP-INTX",
+     "BIP-20DEC30-CDE"
+    ]
+   }
+  }
+ ],
+ "sequence_num": 18,
+ "timestamp": "2026-10-19T14:43:52.63545092Z"
+}

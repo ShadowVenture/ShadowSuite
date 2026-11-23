@@ -1,0 +1,20 @@
+{
+ "channel": "market_trades",
+ "events": [
+  {
+   "trades": [
+    {
+     "price": "81864.2",
+     "product_id": "BTC-USD",
+     "side": "SELL",
+     "size": "0.00071214",
+     "time": "2026-10-19T14:43:53.97401Z",
+     "trade_id": "1107998861"
+    }
+   ],
+   "type": "update"
+  }
+ ],
+ "sequence_num": 98,
+ "timestamp": "2026-10-19T14:43:54.033819551Z"
+}

@@ -1,0 +1,91 @@
+[project]
+name = "shadow-trading-suite"
+version = "0.1.0.dev1"
+description = "Paper-trading-only crypto trading platform without bundled bots: plug in your own bots behind central risk and execution controls"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "ShadowVenture" }]
+keywords = ["trading", "paper-trading", "crypto", "risk-management", "plugins", "simulation"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Typing :: Typed",
+]
+dependencies = [
+    "duckdb>=1.1",
+    "pydantic>=2.9",
+    "websockets>=13",
+]
+
+[project.urls]
+Repository = "https://github.com/ShadowVenture/Shadow-Trading-Suite"
+Issues = "https://github.com/ShadowVenture/Shadow-Trading-Suite/issues"
+
+[project.scripts]
+sts = "shadow_trading_suite.cli:main"
+
+[dependency-groups]
+dev = [
+    "ruff==0.16.9",
+    "pytest>=8",
+    "mypy>=1.13",
+    "hypothesis>=6.100",
+    "pytest-socket>=0.7",
+]
+
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/shadow_trading_suite"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "docs", "examples", "config", ".github", "README.md", "LICENSE", "NOTICE", "AGENTS.md",
+           "CLAUDE.md", "CONTRIBUTING.md", "SECURITY.md", "THIRD_PARTY_LICENSES.md",
+           "pyproject.toml", "uv.lock", ".python-version"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "SIM", "RUF", "N", "ASYNC", "DTZ", "PT"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["decimal.Decimal"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# --disable-socket: tests never touch the network (pytest-socket). The web UI tests bind a
+# loopback socket explicitly through `allow_hosts`.
+addopts = "-ra --strict-markers --disable-socket --allow-unix-socket -m 'not live_public'"
+markers = [
+    "live_public: opt-in smoke test against real PUBLIC exchange market-data endpoints",
+]
+xfail_strict = true
+filterwarnings = ["error"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+mypy_path = "src"
+packages = ["shadow_trading_suite"]
+plugins = ["pydantic.mypy"]
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true

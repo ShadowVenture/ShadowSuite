@@ -1,0 +1,52 @@
+{
+ "channel": "market_trades",
+ "events": [
+  {
+   "trades": [
+    {
+     "price": "81864.26",
+     "product_id": "BTC-USD",
+     "side": "SELL",
+     "size": "0.01272342",
+     "time": "2026-10-19T14:43:52.254731Z",
+     "trade_id": "1107998860"
+    },
+    {
+     "price": "81864.59",
+     "product_id": "BTC-USD",
+     "side": "SELL",
+     "size": "0.00268458",
+     "time": "2026-10-19T14:43:52.251134Z",
+     "trade_id": "1107998859"
+    },
+    {
+     "price": "81864.2",
+     "product_id": "BTC-USD",
+     "side": "SELL",
+     "size": "0.01832301",
+     "time": "2026-10-19T14:43:52.250922Z",
+     "trade_id": "1107998858"
+    },
+    {
+     "price": "81870.04",
+     "product_id": "BTC-USD",
+     "side": "SELL",
+     "size": "0.00024182",
+     "time": "2026-10-19T14:43:51.521483Z",
+     "trade_id": "1107998857"
+    },
+    {
+     "price": "81869.37",
+     "product_id": "BTC-USD",
+     "side": "SELL",
+     "size": "0.01832203",
+     "time": "2026-10-19T14:43:51.311404Z",
+     "trade_id": "1107998856"
+    }
+   ],
+   "type": "snapshot"
+  }
+ ],
+ "sequence_num": 19,
+ "timestamp": "2026-10-19T14:43:52.635620823Z"
+}

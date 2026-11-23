@@ -1,0 +1,16 @@
+{
+ "code": 0,
+ "id": 2,
+ "method": "subscribe",
+ "result": {
+  "channel": "estimatedfunding",
+  "data": [
+   {
+    "t": 1792420979000,
+    "v": "0.000002234"
+   }
+  ],
+  "instrument_name": "BTCUSD-PERP",
+  "subscription": "estimatedfunding.BTCUSD-PERP"
+ }
+}

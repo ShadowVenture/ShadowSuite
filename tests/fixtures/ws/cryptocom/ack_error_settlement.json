@@ -1,0 +1,7 @@
+{
+ "channel": "settlement.BTCUSD-PERP",
+ "code": 40003,
+ "id": 2,
+ "message": "Unsupported instrument",
+ "method": "subscribe"
+}

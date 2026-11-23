@@ -1,0 +1,134 @@
+# ---------------------------------------------------------------
+# SECRETS — never commit. Only .env.example (placeholders) is allowed.
+# ---------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.env
+.envrc
+secrets/
+**/secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.asc
+*.gpg
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*_rsa
+*_ed25519
+credentials*.json
+*credentials*
+*secret*.json
+*secret*.yaml
+*secret*.yml
+*.token
+cdp_api_key*.json
+coinbase_cloud_api_key*.json
+
+# Wallet material — must never exist in this project.
+# Patterns target data files, not source (e.g. portfolio/ledger.py stays trackable).
+*wallet*.json
+*wallet*.txt
+*wallet*.dat
+*.wallet
+wallet*/
+*seed*phrase*
+*seed*.txt
+*mnemonic*
+*recovery*phrase*
+*backup*.json
+*backup*.txt
+*.dat
+keystore/
+*ledger-live*
+ledger*/
+*trezor*
+*bcvault*
+*bc-vault*
+
+# ---------------------------------------------------------------
+# Runtime data, logs, databases
+# Directory rules are anchored to the repo root ("/data/"), otherwise they would also
+# swallow source packages with a data/ subpackage. File-type rules below
+# (*.duckdb, *.parquet, ...) still apply everywhere.
+# ---------------------------------------------------------------
+/data/
+/runtime/
+/logs/
+*.log
+*.log.*
+*.sqlite
+*.sqlite3
+*.db
+*.duckdb
+*.duckdb.wal
+*.parquet
+*.feather
+*.arrow
+*.csv.gz
+/backtests/results/
+/reports/
+/diagnostics/
+*.dump
+
+# ---------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------
+# Docker / local overrides
+# ---------------------------------------------------------------
+docker-compose.override.yml
+compose.override.yml
+.docker/
+
+# ---------------------------------------------------------------
+# Editors / OS
+# ---------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------
+# Claude Code — local, per-machine settings, permission grants, session data and memory
+# never leave this machine. Shared project instructions stay trackable: CLAUDE.md (repo root)
+# and reviewed .claude/commands/, .claude/agents/ and .claude/skills/.
+# ---------------------------------------------------------------
+/.claude/*
+!/.claude/commands/
+!/.claude/agents/
+!/.claude/skills/
+.claude/**/settings.json
+.claude/**/settings.local.json
+**/settings.local.json
+CLAUDE.local.md

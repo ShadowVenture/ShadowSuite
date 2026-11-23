@@ -1,0 +1,14 @@
+# Shadow Trading Suite - example suite configuration (paper only).
+#
+# This configuration installs NO bot: the suite starts with an empty registry and the UI shows
+# an empty state. To run your own bot, add a [[plugins]] table and a matching [[bots]] risk
+# profile in the portfolio file (see docs/plugins.md).
+
+[suite]
+data_dir = "../data"                     # relative to this file; the paper ledger lives here
+portfolio = "portfolio.example.toml"     # relative to this file
+
+# [[plugins]]
+# factory = "my_bot.plugin:create"       # or: entry_point = "my-bot"
+# [plugins.config]
+# threshold = "0.5"

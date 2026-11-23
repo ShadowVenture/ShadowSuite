@@ -1,0 +1,16 @@
+{
+ "code": 0,
+ "id": 2,
+ "method": "subscribe",
+ "result": {
+  "channel": "index",
+  "data": [
+   {
+    "t": 1792421034000,
+    "v": "81879.23"
+   }
+  ],
+  "instrument_name": "BTCUSD-INDEX",
+  "subscription": "index.BTCUSD-INDEX"
+ }
+}
