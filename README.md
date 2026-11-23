@@ -1,3 +1,5 @@
+![Shadow Trading Suite — One workspace. Every strategy.](docs/branding/banner.jpg)
+
 # Shadow Trading Suite
 
 **An open-source, paper-trading-only platform for crypto trading bots, shipped without any bot.**
@@ -14,6 +16,14 @@ order request from a plugin passes through those central controls.
 
 Licence: **GPL-3.0-only** (see [LICENSE](LICENSE), [NOTICE](NOTICE) and
 [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md)).
+
+## Try it and contribute
+
+Start with the [offline demo](#start-without-bots), read the
+[plugin guide](docs/plugins.md), or choose a
+[good first issue](https://github.com/ShadowVenture/Shadow-Trading-Suite/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22).
+Bug reports, documentation improvements and reproducible offline tests are welcome.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution process.
 
 ## What it does
 
