@@ -1,6 +1,6 @@
-![Shadow Trading Suite — One workspace. Every strategy.](docs/branding/banner.jpg)
+![ShadowSuite — One workspace. Every strategy.](docs/branding/banner.jpg)
 
-# Shadow Trading Suite
+# ShadowSuite
 
 **An open-source, paper-trading-only platform for crypto trading bots, shipped without any bot.**
 You bring your own bot as a plugin. The suite provides market-data adapters, a double-entry
@@ -21,14 +21,14 @@ Licence: **GPL-3.0-only** (see [LICENSE](LICENSE), [NOTICE](NOTICE) and
 
 Start with the [offline demo](#start-without-bots), read the
 [plugin guide](docs/plugins.md), or choose a
-[good first issue](https://github.com/ShadowVenture/Shadow-Trading-Suite/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22).
+[good first issue](https://github.com/ShadowVenture/ShadowSuite/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22).
 Bug reports, documentation improvements and reproducible offline tests are welcome.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the contribution process.
 
 ## What it does
 
 ```
-            your bot (plugin)                       Shadow Trading Suite
+            your bot (plugin)                       ShadowSuite
   +------------------------------+   MarketView  +-----------------------------------------+
   | manifest, configure,         |<--------------| market state (public data, LIVE/stale)  |
   | on_market -> Decision        |               |                                         |
@@ -82,8 +82,8 @@ Requirements: Linux (tested on Ubuntu, x86_64) and Python 3.12, 3.13 or 3.14. Se
 From a clone, with [uv](https://docs.astral.sh/uv/):
 
 ```bash
-git clone https://github.com/ShadowVenture/Shadow-Trading-Suite.git
-cd Shadow-Trading-Suite
+git clone https://github.com/ShadowVenture/ShadowSuite.git
+cd ShadowSuite
 uv sync --frozen          # installs the locked dependencies into .venv
 uv run pytest             # offline test suite (network sockets disabled)
 ```
